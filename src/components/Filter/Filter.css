@@ -1,0 +1,10 @@
+@media screen and (max-width: 750px) {
+  .form-select {
+    width: 100px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .filter {
+    display: none;
+  }
+}

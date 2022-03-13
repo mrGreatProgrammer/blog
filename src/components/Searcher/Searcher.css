@@ -1,0 +1,24 @@
+.form-control {
+  width: 375px;
+}
+
+@media screen and (max-width: 850px) {
+  .form-control {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .form-control {
+    width: 270px;
+  }
+  .searcher--btn {
+    width: 75px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .form-control {
+    width: 180px;
+    font-size: 14px;
+  }
+}

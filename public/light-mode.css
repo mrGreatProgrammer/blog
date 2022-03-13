@@ -1,0 +1,56 @@
+* {
+  color: #191919;
+}
+body {
+  background: #eaeaea;
+}
+/* HEADER */
+.header {
+  border-bottom: 1px solid #c5c5c5;
+  background: #bda7a752;
+  box-shadow: 0 4px 30px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+/* NAV BAR */
+.nav__bar {
+  background: #bda7a752;
+  box-shadow: 10px 4px 30px 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.8px);
+  -webkit-backdrop-filter: blur(8.8px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.nav__menu--item:hover {
+  color: aqua;
+}
+.active {
+  color: #353535;
+}
+
+/* POSTS */
+.post {
+  border: 1px solid #a1a1a1;
+  box-shadow: 0px 3px 3px #8a8a8a;
+  background: #fff;
+}
+.post__btn--like {
+  background: #fafafa;
+}
+.post__comments--btn i {
+  color: #252525;
+}
+.post__btn--like i.fas {
+  color: #ea3a3a;
+}
+/* MODAL WINDOW */
+.modal__window {
+  background: #e5e7e3;
+  box-shadow: 0px 0px 8px 1px #383838;
+}
+
+/* COMMENTS */
+.comment {
+  background: #fff;
+  border: #c9c9c9;
+}

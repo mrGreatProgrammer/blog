@@ -1,0 +1,9 @@
+.modal__warning {
+  position: fixed;
+  display: flex;
+  z-index: 3;
+  bottom: 0;
+}
+.alert {
+  padding: 30px;
+}

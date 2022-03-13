@@ -1,0 +1,10 @@
+.posts {
+  margin: 5px;
+  padding: 10px 100px;
+}
+
+@media screen and (max-width: 500px) {
+  .posts {
+    padding: 5px 40px;
+  }
+}

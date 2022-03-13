@@ -1,0 +1,84 @@
+.post {
+  padding: 7px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 15px;
+  border-radius: 8px;
+}
+.post__avatar {
+  margin: 5px;
+  width: 45px;
+  height: 45px;
+  border-radius: 20%;
+  background: #a3a3a3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.post__content {
+  border-bottom: 1px solid #999;
+  margin: 5px 0;
+  padding: 8px;
+}
+.post__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13px;
+}
+.btn-showmore {
+  margin: 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.post__btns {
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  padding-bottom: 5px;
+}
+.post__btn--like {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  border: none;
+  min-width: 80px;
+  height: 65px;
+  padding: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.post__btn--like i {
+  font-size: 26px;
+}
+.post__comments--btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.post__comments--btn i {
+  font-size: 26px;
+}
+
+.post__btn--like:hover i {
+  animation: pulse 0.7s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.post__btn--like span {
+  font-size: 18px;
+}
+
+@keyframes pulse {
+  0% {
+    font-size: 26px;
+  }
+  100% {
+    font-size: 24px;
+  }
+}

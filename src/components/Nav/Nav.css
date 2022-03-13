@@ -1,0 +1,47 @@
+.nav__bar {
+  width: 100%;
+  top: 110px;
+  position: fixed;
+  z-index: 1;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+}
+.go__back--btn{
+  position: fixed;
+  top: 30px;
+  left: 20px;
+  display: flex;
+  box-shadow: 2px 1px 3px 0px #aaa;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  font-size: 12px;
+  border-radius: 20%;
+}
+.go__back--btn i{
+  margin: 3px;
+}
+.nav__menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.nav__menu--item {
+  margin: 10px 30px;
+}
+.nav__menu--item:hover {
+  color: aqua;
+}
+.navigation__link {
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration-skip: 3px;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-skip-ink: 5px;
+  text-decoration-thickness: 3px;
+}
