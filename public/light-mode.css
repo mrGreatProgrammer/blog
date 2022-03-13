@@ -21,6 +21,9 @@ body {
   -webkit-backdrop-filter: blur(8.8px);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
+.go__back--btn {
+  box-shadow: 2px 1px 3px 0px #aaa;
+}
 .nav__menu--item:hover {
   color: aqua;
 }

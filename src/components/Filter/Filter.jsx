@@ -17,7 +17,7 @@ function Filter() {
 
   return (
     <div className="filter">
-      <i class="fas fa-filter"></i>
+      <i className="fas fa-filter"></i>
       Фильтр постов по:
       <select
         className="form-select"

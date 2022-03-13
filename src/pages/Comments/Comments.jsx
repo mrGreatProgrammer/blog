@@ -8,8 +8,7 @@ import "./Comments.css";
 
 function Comments() {
   const dispatch = useDispatch();
-  // const comments = useSelector((state) => state.comments.comments);
-  const comments = [];
+  const comments = useSelector((state) => state.comments.comments);
   const [warningVisible, setWarningVisible] = useState(false);
 
   useEffect(() => {

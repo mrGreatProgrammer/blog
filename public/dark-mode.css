@@ -4,19 +4,22 @@
 body {
   background: #353535;
 }
+button{
+  background: #555;
+}
 /* HEADER */
 .header {
   border-bottom: 1px solid #c5c5c5;
-  background: #bda7a752;
-  box-shadow: 0 4px 30px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px 10px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8.8px);
   -webkit-backdrop-filter: blur(8.8px);
   border: 1px solid rgba(255, 255, 255, 0.4);
 }
 /* NAV BAR */
 .nav__bar {
-  background: #bda7a752;
-  box-shadow: 10px 4px 30px 5px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 10px 4px 30px 5px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8.8px);
   -webkit-backdrop-filter: blur(8.8px);
   border: 1px solid rgba(255, 255, 255, 0.4);
@@ -25,7 +28,7 @@ body {
   color: aqua;
 }
 .active {
-  color: #353535;
+  color: #eee;
 }
 
 /* POSTS */
@@ -52,6 +55,6 @@ body {
 
 /* COMMENTS */
 .comment {
-  background: #fff;
+  background: #585858;
   border: #c9c9c9;
 }

@@ -10,7 +10,7 @@ function Nav() {
   return (
     <div className="nav__bar">
       <button onClick={goBack} className="go__back--btn">
-        <i class="fas fa-chevron-left"></i>
+        <i className="fas fa-chevron-left"></i>
         назад
       </button>
       <nav className="nav">
