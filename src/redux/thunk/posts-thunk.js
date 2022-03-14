@@ -58,11 +58,9 @@ export const search = (searchInput) => async (dispatch) => {
 };
 
 export const likePost = (postId, likes) => (dispatch) => {
-  likes += 1;
   dispatch(likePostAC(postId, likes));
 };
 
 export const disLikePost = (postId, likes) => (dispatch) => {
-  let result = likes - 1;
-  dispatch(disLikePostAC(postId, result));
+  dispatch(disLikePostAC(postId, likes));
 };

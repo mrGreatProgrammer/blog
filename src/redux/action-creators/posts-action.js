@@ -46,7 +46,7 @@ export const likePostAC = (postId, likes) => ({
 export const disLikePostAC = (postId, likes) => ({
   type: DIS_LIKE,
   postId,
-  likes,
+  likes: likes-=1,
 });
 export const filterByDateAC = (filterByDate) => ({
   type: FILTER_POSTS_BY_DATE,

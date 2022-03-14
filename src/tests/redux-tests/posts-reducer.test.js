@@ -1,4 +1,4 @@
-import { getPostsAC, setCurrentPageAC, setTotalPostsCountAC, toggleIsFetchingAC } from "../../redux/action-creators/posts-action";
+import { getPostsAC, likePostAC, setCurrentPageAC, setTotalPostsCountAC, toggleIsFetchingAC } from "../../redux/action-creators/posts-action";
 import postsReducer from "../../redux/reducers/posts-reducer";
 
 let postsForTest = [
