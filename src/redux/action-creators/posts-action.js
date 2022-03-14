@@ -41,7 +41,7 @@ export const hideModalWindowAC = (postId) => ({
 export const likePostAC = (postId, likes) => ({
   type: LIKE_POST,
   postId,
-  likes,
+  likes: likes+=1,
 });
 export const disLikePostAC = (postId, likes) => ({
   type: DIS_LIKE,

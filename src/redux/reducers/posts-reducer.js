@@ -21,7 +21,6 @@ function post(userId, id, title, textContent, photo) {
     liked: false,
     likes: 0,
     isModalVisible: false,
-    photo: "",
     info: photo,
   };
 }

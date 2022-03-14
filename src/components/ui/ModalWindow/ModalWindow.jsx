@@ -16,9 +16,7 @@ function ModalWindow({ post, info }) {
           <button
             onClick={() => dispatch(hideModalWindowAC(post.id))}
             className="btn-danger btn-close btn-dange modal__window--exit_btn"
-          >
-            X
-          </button>
+          ></button>
         </div>
         <h3> {post.title} </h3>
         <div className="modal__window--imgs-container">

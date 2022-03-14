@@ -30,14 +30,14 @@ function DarkMode(props) {
           className="dark__mode--switcher btn_dark"
           onClick={darkModeSwitcher}
         >
-          <i class="fas fa-moon"></i>
+          <i className="fas fa-moon"></i>
         </button>
       ) : (
         <button
           className="dark__mode--switcher btn_light"
           onClick={darkModeSwitcher}
         >
-          <i class="fas fa-sun"></i>
+          <i className="fas fa-sun"></i>
         </button>
       )}
     </div>

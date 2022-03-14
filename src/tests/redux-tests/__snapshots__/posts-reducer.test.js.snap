@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`---- GET ALL POSTS ---- posts values should be correct 1`] = `
+Array [
+  Object {
+    "id": 1,
+    "info": undefined,
+    "isModalVisible": false,
+    "liked": false,
+    "likes": 0,
+    "textContent": undefined,
+    "title": "first post title",
+    "userId": 1,
+  },
+  Object {
+    "id": 2,
+    "info": undefined,
+    "isModalVisible": false,
+    "liked": false,
+    "likes": 0,
+    "textContent": undefined,
+    "title": "second post title",
+    "userId": 3,
+  },
+  Object {
+    "id": 3,
+    "info": undefined,
+    "isModalVisible": false,
+    "liked": false,
+    "likes": 0,
+    "textContent": undefined,
+    "title": "third post title",
+    "userId": 1,
+  },
+]
+`;

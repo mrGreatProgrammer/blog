@@ -35,7 +35,7 @@ function Post({ getOnePost, post }) {
         <Like likes={post.likes} liked={post.liked} id={post.id} />
         <div className="post__comments--btn">
           <NavLink to={`/posts/${post.id}/comments`}>
-            <i class="fas fa-comment"></i>
+            <i className="fas fa-comment"></i>
           </NavLink>
         </div>
       </div>
