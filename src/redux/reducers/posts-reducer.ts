@@ -1,18 +1,8 @@
-import {
-  DIS_LIKE,
-  FILTER_POSTS_BY_ALPHABET,
-  FILTER_POSTS_BY_DATE,
-  GET_POSTS,
-  HIDE_MODAL_WINDOW,
-  LIKE_POST,
-  SET_CURRENT_PAGE,
-  SET_TOTAL_POSTS_COUNT,
-  SHOW_MODAL_WINDOW,
-  TOGGLE_IS_FETCHING_POSTS,
-} from "../action-creators/posts-action";
+import { IPostsState, PostsActions, PostsActionsType } from "../types/posts-reducer";
+
 
 // post constructor
-function post(userId, id, title, textContent, photo) {
+function post(userId: number, id: number, title: string | null, textContent: string | null, photo: any[]) {
   return {
     userId,
     id,
@@ -26,7 +16,7 @@ function post(userId, id, title, textContent, photo) {
 }
 
 // initialized a default state
-let initialState = {
+let initialState:IPostsState = {
   currentPage: 1,
   pageSize: 10,
   posts: [],
@@ -36,31 +26,31 @@ let initialState = {
 };
 
 // REDUCER
-const postsReducer = (state = initialState, action) => {
+const postsReducer = (state = initialState, action: PostsActions): IPostsState => {
   switch (action.type) {
-    case GET_POSTS:
+    case PostsActionsType.GET_POSTS:
       return {
         ...state,
-        posts: action.posts.map((p) =>
+        posts: action.posts.map((p:any) =>
           post(p.userId, p.id, p.title, p.body, action.photoInfo)
         ),
       };
-    case TOGGLE_IS_FETCHING_POSTS:
+    case PostsActionsType.TOGGLE_IS_FETCHING_POSTS:
       return {
         ...state,
         isFetching: action.isFetching,
       };
-    case SET_CURRENT_PAGE:
+    case PostsActionsType.SET_CURRENT_PAGE:
       return {
         ...state,
         currentPage: action.currentPage,
       };
-    case SET_TOTAL_POSTS_COUNT:
+    case PostsActionsType.SET_TOTAL_POSTS_COUNT:
       return {
         ...state,
         totalPostsCount: action.totalPostsCount,
       };
-    case SHOW_MODAL_WINDOW:
+    case PostsActionsType.SHOW_MODAL_WINDOW:
       return {
         ...state,
         posts: state.posts.map((p) => {
@@ -70,7 +60,7 @@ const postsReducer = (state = initialState, action) => {
           return p;
         }),
       };
-    case HIDE_MODAL_WINDOW:
+    case PostsActionsType.HIDE_MODAL_WINDOW:
       return {
         ...state,
         posts: state.posts.map((p) => {
@@ -80,7 +70,7 @@ const postsReducer = (state = initialState, action) => {
           return p;
         }),
       };
-    case LIKE_POST:
+    case PostsActionsType.LIKE_POST:
       return {
         ...state,
         posts: state.posts.map((p) => {
@@ -90,7 +80,7 @@ const postsReducer = (state = initialState, action) => {
           return p;
         }),
       };
-    case DIS_LIKE:
+    case PostsActionsType.DIS_LIKE:
       return {
         ...state,
         posts: state.posts.map((p) => {
@@ -100,12 +90,12 @@ const postsReducer = (state = initialState, action) => {
           return p;
         }),
       };
-    case FILTER_POSTS_BY_DATE:
+    case PostsActionsType.FILTER_POSTS_BY_DATE:
       return {
         ...state,
         filterBy: action.filterByDate,
       };
-    case FILTER_POSTS_BY_ALPHABET:
+    case PostsActionsType.FILTER_POSTS_BY_ALPHABET:
       return {
         ...state,
         filterBy: action.filterByAlphabet,
