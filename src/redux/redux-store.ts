@@ -11,6 +11,8 @@ let reducers = combineReducers({
   comments: commentsReducer,
 });
 
+export type rootState = ReturnType<typeof reducers>
+
 let store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)));
 
 export default store;

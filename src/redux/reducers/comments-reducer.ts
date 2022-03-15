@@ -1,7 +1,17 @@
-import { GET_COMMENTS } from "../action-creators/comments-action";
+import {
+  CommentsAction,
+  CommentsActionsType,
+  ICommentsState,
+} from "../types/comments-reducer";
 
 // comment constructor
-function comment(postId, id, userName, email, text) {
+function comment(
+  postId: number,
+  id: number,
+  userName: string,
+  email: string,
+  text: string
+) {
   return {
     postId,
     id,
@@ -12,15 +22,15 @@ function comment(postId, id, userName, email, text) {
 }
 
 // initialized a default state
-let initialState = {
+let initialState: ICommentsState = {
   comments: [],
   postId: 0,
 };
 
 // REDUCER
-const commentsReducer = (state = initialState, action) => {
+const commentsReducer = (state: ICommentsState = initialState, action: CommentsAction): ICommentsState => {
   switch (action.type) {
-    case GET_COMMENTS:
+    case CommentsActionsType.GET_COMMENTS:
       return {
         ...state,
         postId: action.postId,
