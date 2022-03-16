@@ -1,8 +1,19 @@
-import { DisLikeAction, FilterByAlphabetAction, FilterByDateAction, filterType, GetPostsAction, HideModalWindowAction, LikePostAction, PostsActionsType, SetCurrentPageAction, SetTotalPostsCountACtion, ShowModalWindowAction, ToggleIsFetchingAction } from "../types/posts-reducer";
+import { DisLikeAction,
+  FilterByAlphabetAction,
+  FilterByDateAction,
+  filterType,
+  GetPostsAction,
+  HideModalWindowAction,
+  LikePostAction,
+  PostsActionsType,
+  SetCurrentPageAction,
+  SetTotalPostsCountACtion,
+  ShowModalWindowAction,
+  ToggleIsFetchingAction } from "../types/posts-reducer";
 
 
 // ACTION CREATORS
-export const getPostsAC = (posts: [], photoInfo: []):GetPostsAction => ({
+export const getPostsAC = (posts: [], photoInfo?: []):GetPostsAction => ({
   type: PostsActionsType.GET_POSTS,
   posts,
   photoInfo,

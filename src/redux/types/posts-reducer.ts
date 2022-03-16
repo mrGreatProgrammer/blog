@@ -35,7 +35,7 @@ export enum PostsActionsType {
 export interface GetPostsAction {
   type: PostsActionsType.GET_POSTS;
   posts: [];
-  photoInfo: [];
+  photoInfo?: [];
 }
 export interface ToggleIsFetchingAction {
   type: PostsActionsType.TOGGLE_IS_FETCHING_POSTS;

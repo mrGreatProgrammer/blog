@@ -21,12 +21,12 @@ export const getPosts = (page: number, limit: number, filterValue: filterType) =
       let posts = response.data;
       dispatch(filterByDateAC(filterValue));
       const filterResult = posts.sort((a:any, b: any) => (a.id > b.id ? -1 : 1));
-      dispatch(getPostsAC(filterResult, []));
+      dispatch(getPostsAC(filterResult));
     } else if (filterValue === "al") {
       let posts = response.data;
       const filterResult = posts.sort((a: any, b: any) => a.title.localeCompare(b.title));
       dispatch(filterByAlphabetAC(filterValue));
-      dispatch(getPostsAC(filterResult, []));
+      dispatch(getPostsAC(filterResult));
     }
     const startIndex = (page - 1) * limit;
     const endIndex = page * limit;
@@ -55,7 +55,7 @@ export const search = (searchInput: string) => async (dispatch: Dispatch<PostsAc
     const searchResult = response.data.filter((s: any) =>
       s.title.toLowerCase().includes(searchInput.toLowerCase())
     );
-    dispatch(getPostsAC(searchResult, []));
+    dispatch(getPostsAC(searchResult));
   });
 };
 
